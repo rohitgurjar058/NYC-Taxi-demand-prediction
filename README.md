@@ -11,11 +11,11 @@ https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 File Name | File Name Size | No.of Records | No. of Features
 --------- | -------------- | ------------- | ---------------
 yellow_tripdata_2015-01 |	1.84Gb |	12748986 |  19
-yellow_tripdata_2015-02 |	1.81Gb |	12450521 |	19
-yellow_tripdata_2015-03	| 1.94Gb |	13351609 |	19
-yellow_tripdata_2016-01 |	1.59G	| 10906858 | 19
-yellow_tripdata_2016-02 |	1.66G |	11382049 | 19
-yellow_tripdata_2016-03 |	1.78G |	12210952 | 19
+yellow_tripdata_2015-02 |	1.81Gb |	12450521 |  19
+yellow_tripdata_2015-03	|       1.94Gb |	13351609 |  19
+yellow_tripdata_2016-01 |	1.59G  |       10906858  |  19
+yellow_tripdata_2016-02 |	1.66G  |	11382049 |  19
+yellow_tripdata_2016-03 |	1.78G  |	12210952 |  19
 
 ### Attribute Information
 
@@ -133,4 +133,39 @@ yellow_tripdata_2016-03 |	1.78G |	12210952 | 19
 ### Performance metrics
   1. Mean Absolute percentage error.
   2. Mean Squared error.
+  
+### Data Analysis
 
+Refer to [this](https://github.com/rohitgurjar058/NYC-Taxi-demand-prediction/blob/master/NYC_Taxi_Demand_Prediction.ipynb) ipython notebook
+
+### Clustering / Segmentation
+
+![](https://github.com/rohitgurjar058/NYC-Taxi-demand-prediction/blob/master/Images/clustering.png)
+
+### Time Binning (10-minute interval)
+pickup_cluster | pickup_bins | No. of pick-ups
+--------------- | ----------- | ---------------
+0	|    33	     |		104
+0	|    34	     |		200
+0	|    35	     |		208
+0	|    36	     |		141
+0	|    37	     |		155
+
+### Comparison between Baseline Models
+
+Baseline Models | MAPE | MSE
+--------------- | ---- | ---
+Moving Averages (Ratios)            |     0.22785156353133512   |      1196.2953853046595
+Moving Averages (2016 Values)       |     0.1558345871          |      254.66309363799283
+Weighted Moving Averages (Ratios)   |     0.22706529144871415   |      1053.083529345878
+Weighted Moving Averages (2016 Values)     |    0.1479482182992932    |      224.81054547491
+Exponential Moving Averages (Ratios)       |     0.2275474636148534   |      1019.3071012544802
+Exponential Moving Averages (2016 Values)  |     0.1475381297798153   |      222.35159610215055
+
+### Model Comparision
+
+Model |	TestMAPE(%)
+----- | -----------
+Linear Regression |	0.159752
+Random Forest Regression | 0.127305
+XGBoost Regressor |	0.111040
