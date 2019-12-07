@@ -169,3 +169,7 @@ Model |	TestMAPE(%)
 Linear Regression |	0.159752
 Random Forest Regression | 0.127305
 XGBoost Regressor |	0.111040
+
+### Reference
+
+Applied AI Course
