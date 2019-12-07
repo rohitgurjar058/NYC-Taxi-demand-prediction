@@ -19,7 +19,6 @@ yellow_tripdata_2016-03 |	1.78G |	12210952 | 19
 
 ### Attribute Information
 
-
 <table border="1">
 	<tr>
 		<th>Field Name</th>
@@ -74,12 +73,11 @@ yellow_tripdata_2016-03 |	1.78G |	12210952 | 19
 	</tr>
 	<tr>
 		<td>Store_and_fwd_flag</td>
-		<td>This flag indicates whether the trip record was held in vehicle memory before sending to the vendor,<br\> aka “store and forward,” because the vehicle did not have a connection to the server.
+		<td>This flag indicates whether the trip record was held in vehicle memory before sending to the vendor,<br\> aka "store and forward," because the vehicle did not have a connection to the server.
 		<br\>Y= store and forward trip
 		<br\>N= not a store and forward trip
 		</td>
 	</tr>
-
 	<tr>
 		<td>Dropoff_longitude</td>
 		<td>Longitude where the meter was disengaged.</td>
